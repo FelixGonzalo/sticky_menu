@@ -7,30 +7,6 @@ body {
   padding: 20px 0px;
 }
 
-.header-sticky {
-  background: #ff2121;
-  padding: 0px;
-  color: white;
-  position: sticky;
-  top: 0;
-  animation: header-sticky 0.5s;
-}
-
-@keyframes header-sticky {
-  from {
-    padding-bottom: 0px;
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    padding-bottom: 5px;
-  }
-}
-
-.header-sticky .header-menu a {
-  color: white;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -60,4 +36,30 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 0 20px;
+}
+
+/* header sticky */
+
+.header-sticky {
+  background: #ff2121;
+  padding: 0px;
+  color: white;
+  position: sticky;
+  top: 0;
+  animation: header-sticky 0.5s;
+}
+
+.header-sticky .header-menu a {
+  color: white;
+}
+
+@keyframes header-sticky {
+  from {
+    padding-bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    padding-bottom: 5px;
+  }
 }
